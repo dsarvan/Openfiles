@@ -1,0 +1,71 @@
+man 8 afterboot		# things to check after the first complete boot
+
+# connect network
+ifconfig
+doas ifconfig urndis0 up
+doas dhclient urndis0
+
+# shell configuration (edit ~/.kshrc)
+exec .profile
+
+# xenodm display manager (as root)
+rcctl enable xenodm
+rcctl start xenodm
+rcctl disable xenodm
+
+# cpu frequency auto scaling (as root)
+rcctl enable apmd
+rcctl set apmd flags -A
+rcctl start apmd
+
+# pulseaudio
+pulseaudio --check	# return 0 when the daemon is already running
+pulseaudio --start	# start pulseaudio if it is not running yet
+pactl set-sink-volume 0 +15%
+pactl set-sink-volume 0 -5dB
+
+# package management
+pkg_add <pkgname>		# install a package
+pkg_add -u				# upgrade user installed package
+pkg_delete <pkgname>	# remove a package
+pkg_info 				# list of installed packages	
+pkg_info -L				# show the files within each package
+pkg_info -m				# show packages tagged as manual installations
+pkg_info <pkgname>		# show a description of a package
+pkg_info -Q <pkgname>	# query for a package name
+pkg_mgr					# curses package manager
+
+# user information
+finger <username>
+userinfo <username>
+
+# info on usb device
+dmesg			# redisplay the kernel boot messages		
+
+grdc			# grand digital clock
+pom			    # display the phase of the moon
+
+# mount usb drive
+doas sysctl hw.disknames		# list device names
+dmesg | grep sd1				# info about sd1
+doas disklabel sd1				# show more information about sd1
+doas mount /dev/sd1i /mnt/usb	# mount usb drive at /mnt/usb
+doas umount /mnt/usb 
+
+doas fdisk sd1
+
+Ctrl + Shift + V		# paste on the terminal
+
+# qutebrowser
+: set zoom.default 67
+
+# ssh
+/etc/rc.d sshd start		# System V init
+/etc/init.d/ssh reload		# reload ssh init
+
+# to gain write permissions
+: w !doas tee >/dev/null <filename>
+
+# Web Pages of Interest
+OpenBSD project: http://www.OpenBSD.org
+OpenBSD news site: OpenBSD Journal
