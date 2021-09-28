@@ -1,0 +1,26 @@
+Keith Burnett - https://sohcahtoa.org.uk/index.html
+TuM'Fatig - https://www.tumfatig.net/
+Console Desktop Guide -
+	 https://pspodcasting.net/dan/blog/2018/console_desktop.html
+The Linux Command Line - linuxclass.heinz.cmu.edu/doc/tlcl.pdf
+Low-Tech Magazine - https://www.lowtechmagazine.com/
+Solene - https://dataswamp.org/~solene/
+OpenBSD Journal - https://undeadly.org/
+Homing on Code - http://blog.tintagel.pl/
+OpenBSD T-Shirt - http://www.openbsd.org/tshirts.html#16
+Redbubble - https://www.redbubble.com/ (Classic T-Shirt)
+OpenBSD support - http://openbsdsupport.org/index.html
+Wallpaper - https://wallpaperaccess.com/
+Reddit OpenBSD - https://reddit.com/r/openbsd/
+nixers - https://nixers.net/
+Nord Theme - https://www.nordtheme.com/
+Clipart Library - http://clipart-library.com/free/
+UEFI boot - https://jasper.la/posts/openbsd-uefi-bootloader-howto/
+OpenBSD on Lenovo - https://jcs.org/2021/01/27/x1nano
+OpenBSD as workstation - https://jcs.org/
+OpenBSD Workstation Guide - https://begriffs.com/posts/2017-05-17-
+	openbsd-workstation-guide.html
+https://jamsek.dev/tag/openbsd.html
+Owen Lynch - https://owenlynch.org/
+Go development on OpenBSD - http://blog.tintagel.pl/2015/03/21/go-development-on-openbsd.html
+Laptop with Linux - https://laptopwithlinux.com/
